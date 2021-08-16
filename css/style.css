@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@400&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+#header{
+    width: 100%;
+    background-color: lightgray;
+    padding: 6px;
+    height: 35px;
+}
+#logo{
+    float: left;
+    padding-left: 10px ;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 140%;
+    font-family: 'Anton', sans-serif;
+}
+#buttonContainer{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.toggleButton{
+    float: left;
+    border: 1px solid black;
+    width: 80px;
+    line-height: 20px;
+    padding: 6px;
+    border-right: none;
+    font-size: 95%;
+    text-align: center;
+}
+#html{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#output{
+    border-right: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.active{
+    background-color: lightsteelblue;
+}
+
+.highlightedButton{
+    background-color: gray;
+}
+
+textarea{
+    width: 50%;
+    border-top: none;
+    font-family: 'Source Code Pro', monospace;
+    resize: none;
+}
+
+
+iframe{
+    border: none;
+}
+.panel{
+    float: left;
+    border-left: none;
+    border-bottom: none ;
+}
+
+.hidden{
+    display: none;
+}

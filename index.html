@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">CodePlayer</div>
+        <div id="buttonContainer">
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            <div class="toggleButton active" id="output">Output</div>
+        </div>
+    </div>
+
+    <div id="bodyContainer">
+        <textarea id="htmlPanel" class="panel">
+            <p id='abc'> This is a paragraph </p>
+        </textarea>
+
+        <textarea id="cssPanel" class="panel hidden">
+            #abc{color:green;}
+        </textarea>
+
+        <textarea id="javascriptPanel" class="panel hidden">
+            document.getElementById('abc').innerHTML = 'Changed Via JavaScript';
+        </textarea>
+
+
+        <iframe id="outputPanel" class="panel">
+
+        </iframe>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
